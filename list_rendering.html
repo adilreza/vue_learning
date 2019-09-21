@@ -1,0 +1,52 @@
+<html>
+    <head>
+       <title>
+           this is vue list rendering 
+           
+       </title>
+       
+       <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        
+    </head>
+    <body>
+      
+      <div id="my_app">
+          <h1>{{message}}</h1>
+          
+           <hr>
+      
+      <ul>
+          <li v-for="item in 10">{{ item }}</li>
+       </ul>
+         <hr>
+          
+        <ul>
+            <li v-for="fruit in fruits"> {{fruit}}</li>
+        </ul>
+
+          
+          
+      </div>
+     
+       
+       
+       <script>
+           
+           var obj = new Vue({
+               el:"#my_app",
+               data:{
+                   message: "Hello adil ",
+                   fruits: [
+                       'mango','date','pineaple','apple'
+                   ]
+               }
+           })
+        
+       </script>
+       
+       
+       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+        
+    </body>
+</html>
