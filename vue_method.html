@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vue js method </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+
+    <body>
+    <div id = "my_vue_app">
+        <h3>{{name}}</h3>
+        <h3>{{address}}</h3>
+        <br>
+        <hr>
+        <h1>{{ mymail() }}
+    </div>
+
+
+    <script>
+        var obj = new Vue({
+            el: '#my_vue_app',
+            data: {
+                name : "Adil REza",
+                email : "adilreza043@gmail.com",
+                address : "Dhaka Bangladesh"
+            },
+            methods: {
+                mymail :function()
+                {
+                    return "My mail is: "+ this.email;
+                }
+            }
+        })
+
+    </script>
+
+
+
+
+
+
+    </body>
+<html>
